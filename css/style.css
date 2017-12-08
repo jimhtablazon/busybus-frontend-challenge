@@ -25,10 +25,12 @@ nav {
 
 .location {
   width: 100%;
-  height: 100px;
   float: left;
   background-color: #dbd9db;
   border-bottom: .1px solid #9B9B9B;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
 }
 
 .location:hover {
@@ -38,10 +40,8 @@ nav {
 
 .content {
   width: 85%;
-  height: 100px;
   float: left;
   padding-left: 2em;
-  padding-top: 30px;
 }
 
 .restaurant-list {
@@ -49,11 +49,11 @@ nav {
 }
 
 .arrow {
-  width: 10%;
   display: block;
-  float: right;
-  padding-right: 16px;
-  padding-top: 45px;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .content h1 {
