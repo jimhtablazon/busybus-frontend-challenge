@@ -4,33 +4,64 @@
 
 body {
   background-color: #333;
-  font-family: sans-serif;
+  font-family: Avenir, sans-serif;
   font-size: 10px;
+
 }
 
 .container {
   margin: 0 auto;
-  width: 420px;
+  width: 375px;
 }
 
 nav {
   margin: 0 auto;
-  padding: 15px 15px  15px 15px;
-  position: fixed;
-  width: 420px;
-  background-color: #000000;
+  position: relative;
+  width: 375px;
+  background-color: #fff;
+
 }
 
-/*Restaurants*/
+.arrow-left {
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 55%;
+  transform: scale(1.5);
+}
+
+.Routes h1 {
+  font-size:1.5em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+
+}
+
+/*Routes*/
 
 .location {
   width: 100%;
   float: left;
-  background-color: #dbd9db;
-  border-bottom: .1px solid #9B9B9B;
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
+}
+
+.direction {
+  width:100%;
+  float: left;
+  background-color: #EFEFF5;
+  padding-top: 25px;
+  padding-bottom: 10px;
+
+}
+
+.direction-con {
+  padding-left: 1.4em;
+  font-size: 1.4em;
+  text-transform:uppercase;
 }
 
 .location:hover {
@@ -42,11 +73,11 @@ nav {
   width: 85%;
   float: left;
   padding-left: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.restaurant-list {
-  padding-top: 50px;
-}
+
 
 .arrow {
   display: block;
@@ -57,15 +88,23 @@ nav {
 }
 
 .content h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 0em;
   margin-top: 0em;
 }
 
 .content h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: normal;
   margin-top: 0em;
   margin-bottom: 0em;
 
+}
+
+.location-with-border {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding-top: 15px;
+  position: relative;
 }
