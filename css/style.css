@@ -19,7 +19,7 @@ nav {
   position: relative;
   width: 375px;
   background-color: #fff;
-
+  box-shadow: 0px 0px 4px grey;
 }
 
 .arrow-left {
@@ -33,20 +33,22 @@ nav {
 .Routes h1 {
   font-size:1.5em;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 15px;
 
 }
 
 /*Routes*/
-
-.location {
-  width: 100%;
-  float: left;
-  background-color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  position: relative;
+.map {
+  height: 375px;
+  background-image: url(/Images/RoutesMap.png);
+}
+.stop {
+  background-color: white;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 0px 5px  grey;
 }
 
 .direction {
@@ -55,29 +57,64 @@ nav {
   background-color: #EFEFF5;
   padding-top: 25px;
   padding-bottom: 10px;
-
-}
-
-.direction-con {
   padding-left: 1.4em;
   font-size: 1.4em;
   text-transform:uppercase;
 }
 
+.location {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  position: relative;
+}
+
 .location:hover {
   background-color: #BABABA;
+}
 
+.location::after {
+  content: " ";
+  border-bottom: 1px solid grey;
+  border-bottom-width: thin;
+  display: block;
+  position: relative;
+  left: 2em;
+  width: 95%;
+  height: 75px;
+}
+
+.location:last-child::after{
+  display: none;
+}
+
+.box {
+width:25%;
+float: left;
+text-align: center;
+background-image: url(/images/Rectangle.png);
+background-repeat: no-repeat;
+background-size:59%;
+background-position: center;
+padding-top: 25px;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 25px;
+
+}
+
+.box-content {
+  color: white;
+
+  font-size: 1.2em;
 }
 
 .content {
-  width: 85%;
   float: left;
-  padding-left: 2em;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
 }
-
-
 
 .arrow {
   display: block;
@@ -85,6 +122,7 @@ nav {
   right: 2em;
   top: 50%;
   transform: translateY(-50%);
+
 }
 
 .content h1 {
@@ -99,12 +137,4 @@ nav {
   margin-top: 0em;
   margin-bottom: 0em;
 
-}
-
-.location-with-border {
-  width: 100%;
-  float: left;
-  background-color: #fff;
-  padding-top: 15px;
-  position: relative;
 }

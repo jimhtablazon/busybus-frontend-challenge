@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://use.fontawesome.com/37471687aa.js"></script>
   </head>
+
   <body>
-    <section class="container">
+    <div class="container">
+    <header>
       <nav>
+        <div class="status-bar">
+          <img src="/Images/AppleStatusBar.png" style="width:100%;">
+        </div>
         <div class="arrow-left">
           <i class="fa fa-angle-left fa-inverse fa-2x" style="color:#007AFF" aria-hidden="true"></i>
         </div>
@@ -17,111 +22,196 @@
           <h1>Routes</h1>
         </div>
       </nav>
-      <section class="routes-list">
-        <!- Eastbound -!>
+  </header>
 
-        <div class="direction">
-            <div class="direction-con">
-              <h2>Eastbound</h2>
-            </div>
 
-      </div>
-        <!- Eastbound Routes -!>
-
-        <div class="location-with-border">
-          <div class="content">
-            <h1>Line 60 to Randolph / Harbor Rd</h1>
-            <h3>Every 20 minutes</h3>
-          </div>
-          <div class="arrow">
-            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-          </div>
+      <main class="routes-list">
+        <section class="map">
+          <!--<img src="/Images/BBMapRoutesMap.png" alt="Routes Map" size="375px">-->
+        </section>
+        <div class="stop">
+          <img src="/Images/WashingtonStop.png" alt="Bus Stop Icon">
         </div>
-
+      <!--Eastbound -->  <section>
+          <div class="direction">
+              <h2>Eastbound</h2>
+          </div>
 
         <div class="location">
+          <div class="box">
+            <div class="box-content">
+            <h1>Every</h1>
+            <h3>20 mins</h3>
+          </div>
+          </div>
           <div class="content">
-            <h1>Line 24 to Nacy Pier</h1>
-            <h3>Every 10 minutes</h3>
+            <h1>Line 60 </h1>
+            <h3>to Randolph / Harbor Rd</h3>
           </div>
           <div class="arrow">
             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-          <!- Northbound -!>
+
+        <div class="location">
+          <div class="box">
+            <div class="box-content">
+            <h1>Every</h1>
+            <h3>10 mins</h3>
+          </div>
+          </div>
+          <div class="content">
+            <h1>Line 24</h1>
+            <h3>to Navy Pier</h3>
+          </div>
+          <div class="arrow">
+            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+        <section class="Northbound">
         <div class="direction">
             <div class="direction-con">
               <h2>Northbound</h2>
             </div>
         </div>
-        <!-Northbound Routes -!>
+
         <div class="location">
+          <div class="box">
+            <div class="box-content">
+            <h1>Every</h1>
+            <h3>16 mins</h3>
+          </div>
+          </div>
           <div class="content">
-            <h1>Line 151 to Devon / Clark</h1>
-            <h3>Every 16 minutes</h3>
+            <h1>Line 151</h1>
+            <h3>to Devon / Clark</h3>
           </div>
           <div class="arrow">
             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-      <!- Southbound -!>
+      </section>
+      <section class="Southbound">
         <div class="direction">
             <div class="direction-con">
               <h2>Southbound</h2>
             </div>
         </div>
-        <!-Southbound Routes -!>
+
         <div class="location">
+          <div class="box">
+            <div class="box-content">
+            <h1>Every</h1>
+            <h3>15 mins</h3>
+          </div>
+          </div>
           <div class="content">
-            <h1>Line J14 to 103rd / Stony Island</h1>
-            <h3>Every 15 minutes</h3>
+            <h1>Line J14 </h1>
+            <h3>to 103rd / Stony Island</h3>
           </div>
           <div class="arrow">
             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
         <div class="location">
+          <div class="box">
+            <div class="box-content">
+            <h1>Every</h1>
+            <h3>10 mins</h3>
+          </div>
+          </div>
           <div class="content">
-            <h1>Line 124 to Navy Pier</h1>
-            <h3>Every 10 minutes</h3>
+            <h1>Line 124</h1>
+            <h3>to Navy Pier</h3>
           </div>
           <div class="arrow">
             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-          <!-Reroute -!>
+      </section>
+        <section class="Reroute">
         <div class="direction">
             <div class="direction-con">
               <h2>Reroute</h2>
             </div>
         </div>
-          <!-Reroute Routes -!>
+
         <div class="location">
-          <div class="content">
-            <h1>Line 6x to Jackson Park Express</h1>
+          <div class="box">
+            <div class="box-content">
             <h3>N/A</h3>
+            <h1></h1>
+          </div>
+          </div>
+          <div class="content">
+            <h1>Line 6x</h1>
+            <h3>to Jackson Park Express</h3>
           </div>
           <div class="arrow">
             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-        <!-Out of Service -!>
+      </section>
+      <section class="Out-of-service">
             <div class="direction">
                 <div class="direction-con">
                   <h2>Out of Service </h2>
                 </div>
             </div>
-          <!-Out of Service Routes -!>
+
           <div class="location">
+            <div class="box">
+              <div class="box-content">
+              <h1>No</h1>
+              <h3>Lines</h3>
+            </div>
+            </div>
             <div class="content">
-              <h1>Line 4 to Cottage Grove</h1>
-              <h3>Every 20 minutes</h3>
+              <h1>Line 4 resumes at 12:10am</h1>
+              <h3>to Cottage Grove</h3>
             </div>
             <div class="arrow">
               <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
             </div>
           </div>
-      </section>
-    </section>
+
+
+          <div class="location">
+                      <div class="box">
+                        <div class="box-content">
+                        <h1>No</h1>
+                        <h3>Lines</h3>
+                      </div>
+                      </div>
+                      <div class="content">
+                        <h1>Line 20 resumes at 12:10am</h1>
+                        <h3>to Madison</h3>
+                      </div>
+                      <div class="arrow">
+                        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                      </div>
+          </div>
+
+
+          <div class="location">
+                                <div class="box">
+                                  <div class="box-content">
+                                  <h1>No</h1>
+                                  <h3>Lines</h3>
+                                </div>
+                                </div>
+                                <div class="content">
+                                  <h1>Line 157 resumes at 6:00am</h1>
+                                  <h3>to Streeterville / Taylor</h3>
+                                </div>
+                                <div class="arrow">
+                                  <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                </div>
+        </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
